@@ -4,7 +4,7 @@ class Categoria(models.Model):
     descricao = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.descricao
+        return f"{self.descricao} ({self.id})"
 
 class Editora(models.Model):
     nome = models.CharField(max_length=100)
