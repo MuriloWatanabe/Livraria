@@ -32,5 +32,5 @@ class Livro(models.Model):
     editora = models.ForeignKey(Editora, on_delete=models.PROTECT, related_name="livros")
 
     def __str__(self):
-        return f"{self.titulo}({self.quantidade})"
+        return f"{self.nome}({self.quantidade})"
 
