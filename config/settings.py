@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "corsheaders",
     "rest_framework",
+    "usuario",
     "livraria",
 ]
 
@@ -134,3 +135,5 @@ REST_FRAMEWORK = {
         "rest_framework.permissions.DjangoModelPermissions",
     ],
 }
+
+AUTH_USER_MODEL = "usuario.Usuario"
