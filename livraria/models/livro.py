@@ -1,6 +1,8 @@
 from django.db import models
 
-from livraria.models import Autor, Categoria, Editora
+from .autor import Autor
+from .editora import Editora
+from .categoria import Categoria
 
 
 class Livro(models.Model):
